@@ -98,20 +98,20 @@ class MatchingModel(models.Model):
         if self.matching_algorithm == self.MATCH_ALL:
             for word in self._split_match():
                 search_result = re.search(
-                    r"\b{}\b".format(word), text, **search_kwargs)
+                    r"\b{}\b".format(re.escape(word)), text, **search_kwargs)
                 if not search_result:
                     return False
             return True
 
         if self.matching_algorithm == self.MATCH_ANY:
             for word in self._split_match():
-                if re.search(r"\b{}\b".format(word), text, **search_kwargs):
+                if re.search(r"\b{}\b".format(re.escape(word)), text, **search_kwargs):
                     return True
             return False
 
         if self.matching_algorithm == self.MATCH_LITERAL:
             return bool(re.search(
-                r"\b{}\b".format(self.match), text, **search_kwargs))
+                r"\b{}\b".format(re.escape(self.match)), text, **search_kwargs))
 
         if self.matching_algorithm == self.MATCH_REGEX:
             return bool(re.search(
