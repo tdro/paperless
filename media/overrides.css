@@ -1,0 +1,75 @@
+body { background-color: #fcfcfc; max-width: 1800px; margin: 0 auto; }
+label[for="searchbar"] { display: none !important; }
+.result .header { background-color: #fff !important }
+.result .header a, .result a.tag { color: #000 !important; }
+.result .header .info { display: none !important; }
+.result .date { color: #555 !important; }
+thead th a:link, thead th a:visited { color: #000 !important; }
+thead th, tfoot td { color: #000 !important; }
+a.section:link, a.section:visited { color: #000 !important; }
+#changelist-filter { background: transparent }
+.results, #changelist-filter, #login-form, fieldset { text-align: left }
+.selector .help-icon { background: url(/static/admin/img/icon-unknown.svg) 0 0 no-repeat !important; }
+.xfull { margin-top: -1rem; }
+.object-tools { display: inline-block; }
+.module, #changelist .actions { background-color: transparent; }
+
+#changelist #toolbar { 
+  border-top: none !important; 
+  border-bottom: none !important; 
+  background-color: transparent !important;
+}
+
+.djangoql-toggle { display: none !important; }
+.paginator { border-top: none !important; }
+#changelist .paginator { border-bottom: none !important; }
+#changelist .toplinks { border-bottom: none !important; }
+.grid { margin-right: 0 !important; }
+.quiet { margin: 0 1rem !important; color: #555; }
+
+@media (max-width: 560px) { table#result_list { display: block; overflow:scroll } }
+
+.paginator .this-page {font-size: 24px !important; color: #17541f; }
+.paginator a:link, .paginator a:visited { background-color: transparent !important; color: #000 !important; }
+.paginator a:focus, .paginator a:hover { background-color: #ccc !important; border-radius: 6px; }
+#header { color: #000 !important; background-color: transparent !important; }
+#header a:link, #header a:visited { color: #000 !important; }
+.breadcrumbs { display: none !important; }
+#content h1 { display: none !important; }
+#content-related { float: none !important; width: 100% !important; position: inherit !important; margin-right: 0 !important; text-align: left; background-color: transparent !important; }
+.colMS { margin: 0 auto !important; }
+#branding, #user-tools, #content { text-align: center; }
+.colMS div:first-child h3:first-child { color: #17541f; font-size: 2rem !important; }
+.colMS div:first-child { margin-bottom: 4rem !important; }
+.actions { margin-bottom: 2rem; justify-content: center; }
+textarea { vertical-align: middle !important }
+#changelist-search > div, #changelist-search input[type="submit"] { font-weight:bold; margin: 0 auto; }
+#changelist #toolbar form input[type="submit"] { margin: 1rem auto; padding: 8px 24px; }
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+  color: #fff !important;
+}
+
+.button, .button:active, .button:focus, .button:hover, a.button, .submit-row input, input[type="submit"], input[type="submit"]:active, input[type="submit"]:focus, input[type="submit"]:hover, input[type="button"], input[type="button"]:active, input[type="button"]:focus, input[type="button"]:hover {
+    background-color: #17541f !important;
+}
+
+.button, #changelist #toolbar form input[type="submit"] { border: none !important; box-shadow: none !important; }
+
+#changelist-search input#searchbar { width: 100%; }
+
+#searchbar {
+  margin: 2rem 0 !important;
+  height: 1rem !important; 
+  padding: 0.75rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 768px) { #searchbar { width: 100% !important; } }
+
+.module h2, .module caption, .inline-group h2 {
+    background-color: #eee;
+    color: #000 !important;
+}
+
+.object-tools a:link, .object-tools a:visited { border-radius: 3px; background-color: #17541f; }
